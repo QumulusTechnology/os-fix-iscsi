@@ -1,0 +1,4 @@
+[Filters]
+# os-fix-iscsi
+targetcli: CommandFilter, targetcli, root
+iscsiadm: CommandFilter, iscsiadm, root

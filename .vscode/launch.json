@@ -1,0 +1,26 @@
+{
+    "configurations": [
+
+
+        {
+            "name": "Python Debugger: Module",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "os_fix_iscsi",
+            "args" : ["generate"]
+        },
+        {
+            "name": "Python: Cinder",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/var/lib/kolla/venv/bin/cinder-volume",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "gevent": true,
+            "args": [
+                "--config-file",
+                "/etc/cinder/cinder.conf"
+            ],
+        },
+    ]
+}

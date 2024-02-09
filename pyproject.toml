@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "os-fix-iscsi"
+version = "0.1.0"
+description = "Repairs missing OpenStack ISCSI configuration"
+authors = ["Daniel Niasoff <4070285+dniasoff@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "0.9.0"
+rtslib-fb = "2.1.76"
+targetcli-fb = "2.1.51.1"
+configshell-fb = "1.1.30"
+
+[tool.poetry.scripts]
+os-fix-iscsi = "os_fix_iscsi.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
